@@ -8,9 +8,12 @@ def area(a, h):
                 Площадь треугольника, вычисляемая по формуле:
                 (a * h) / 2
             Пример вызова:
-                int a = 10
-                int h = 6
-                return (10 * 6) / 2 = 30'''
+                int a = 7
+                int h = 4
+                return (7 * 4) / 2 = 14'''
+    if a < 0 or h < 0:
+        raise ValueError("Сторона и высота треугольника не могут быть отрицательными")
+
     return a * h / 2
 
 
@@ -28,4 +31,7 @@ def perimeter(a, b, c):
                 int b = 4
                 int c = 5
                 return 3 + 4 + 5 = 12'''
+    if a < 0 or b < 0 or c < 0:
+        raise ValueError("Стороны треугольника не могут быть отрицательными")
+
     return a + b + c
