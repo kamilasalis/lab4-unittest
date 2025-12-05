@@ -97,14 +97,15 @@
 python3 -m unittest discover -s tests   
 ```
 **Фактический вывод:**
-![alt text](image-2.png)
+![alt text](image-5.png)
+
 
 **Если захочется запустить не все тесты, а лишь для одной фигуры, то используем команду(пример для rectangle):**
 ```
 python3 -m unittest tests.test_rectangle
 ```
 **Результат:**
-![alt text](image-5.png)
+![alt text](image-6.png)
 
 # 8. История изменений (GitHub Commits)
 Ниже представлены коммиты, отражающие появление тестов и доработку функций:
