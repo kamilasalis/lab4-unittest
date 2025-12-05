@@ -16,6 +16,10 @@ class RectangleTestCase(unittest.TestCase):
         with self.assertRaises(ValueError):
             area(-10, 5)
 
+    def test_area_arguments(self):
+        with self.assertRaises(TypeError):
+            area('a', 8)
+
     def test_perimeter_normal(self):
         self.assertEqual(perimeter(10, 5), 30)
 
@@ -28,3 +32,7 @@ class RectangleTestCase(unittest.TestCase):
     def test_perimeter_negative(self):
         with self.assertRaises(ValueError):
             perimeter(10, -5)
+
+    def test_perimeter_arguments(self):
+        with self.assertRaises(TypeError):
+            perimeter('a')

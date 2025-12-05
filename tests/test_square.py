@@ -16,6 +16,11 @@ class SquareTestCase(unittest.TestCase):
         with self.assertRaises(ValueError):
             area(-4)
 
+    def test_area_arguments(self):
+        with self.assertRaises(TypeError):
+            area('a')
+
+
     def test_perimeter_normal(self):
         self.assertEqual(perimeter(7), 28)
 
@@ -28,3 +33,7 @@ class SquareTestCase(unittest.TestCase):
     def test_perimeter_negative(self):
         with self.assertRaises(ValueError):
             perimeter(-8)
+
+    def test_perimeter_arguments(self):
+        with self.assertRaises(TypeError):
+            perimeter('a')
