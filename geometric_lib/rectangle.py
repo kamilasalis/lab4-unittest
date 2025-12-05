@@ -9,6 +9,8 @@ def area(a, b):
                 return 5 * 3 = 15'''
     if a < 0 or b < 0:
         raise ValueError("Стороны прямоугольника не могут быть отрицательными")
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+            raise TypeError("Аргументы должны быть числами")
 
     return a * b
 
@@ -24,5 +26,7 @@ def perimeter(a, b):
                 return (3 + 7) * 2 = 20'''
     if a < 0 or b < 0:
         raise ValueError("Стороны прямоугольника не могут быть отрицательными")
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+            raise TypeError("Аргументы должны быть числами")
 
     return (a + b) * 2

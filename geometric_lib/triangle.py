@@ -13,6 +13,8 @@ def area(a, h):
                 return (7 * 4) / 2 = 14'''
     if a < 0 or h < 0:
         raise ValueError("Сторона и высота треугольника не могут быть отрицательными")
+    if not isinstance(a, (int, float)) or not isinstance(h, (int, float)):
+            raise TypeError("Аргументы должны быть числами")
 
     return a * h / 2
 
@@ -33,5 +35,7 @@ def perimeter(a, b, c):
                 return 3 + 4 + 5 = 12'''
     if a < 0 or b < 0 or c < 0:
         raise ValueError("Стороны треугольника не могут быть отрицательными")
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)) or not isinstance(c, (int, float)):
+            raise TypeError("Аргументы должны быть числами")
 
     return a + b + c

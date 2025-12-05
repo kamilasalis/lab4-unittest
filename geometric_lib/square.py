@@ -9,6 +9,8 @@ def area(a):
                 return 8 * 8 = 64'''
     if a < 0:
         raise ValueError("Сторона квадрата не может быть отрицательной")
+    if not isinstance(a, (int, float)):
+            raise TypeError("Аргументы должны быть числами")
 
     return a * a
 
@@ -24,5 +26,7 @@ def perimeter(a):
                 return 4 * 7 = 28'''
     if a < 0:
         raise ValueError("Сторона квадрата не может быть отрицательной")
+    if not isinstance(a, (int, float)):
+            raise TypeError("Аргументы должны быть числами")
 
     return 4 * a

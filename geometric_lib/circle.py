@@ -12,7 +12,8 @@ def area(r):
                 return 3,14 * 5 * 5 = 78,5'''
     if r < 0:
         raise ValueError("Радиус круга не может быть отрицательным")
-
+    if not isinstance(r, (int, float)):
+            raise TypeError("Аргументы должны быть числами")
     return math.pi * r * r
 
 
@@ -27,5 +28,7 @@ def perimeter(r):
                 return 2 * 3,14 * 6 = 37,68'''
     if r < 0:
         raise ValueError("Радиус круга не может быть отрицательным")
-
+    if not isinstance(r, (int, float)):
+            raise TypeError("Аргументы должны быть числами")
+    
     return 2 * math.pi * r
